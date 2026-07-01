@@ -1,0 +1,9 @@
+# 依賴套件
+node_modules/
+
+# 環境變數（含敏感資訊）
+.env
+.env.local
+.env.*.local
+
+note/
