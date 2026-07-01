@@ -3,9 +3,6 @@ const { v4: uuidv4 } = require("uuid");
 const errorHandle = require("./errorHandle");
 const todos = [];
 
-console.log("伺服器正在啟動...");
-console.log("請訪問 http://localhost:3005/todos");
-
 const requestListener = (request, response) => {
   const headers = {
     "Access-Control-Allow-Headers":
