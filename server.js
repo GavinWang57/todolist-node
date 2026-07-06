@@ -88,9 +88,7 @@ const requestListener = (request, response) => {
       errorHandle(response);
       return;
     }
-  }
-  // *************
-  else if (request.url.startsWith("/todos/") && request.method === "PATCH") {
+  } else if (request.url.startsWith("/todos/") && request.method === "PATCH") {
     request.on("end", () => {
       try {
         const id = request.url.split("/").pop();
@@ -114,18 +112,6 @@ const requestListener = (request, response) => {
         errorHandle(response);
       }
     });
-  }
-  // *************
-  else if (request.method === "OPTIONS") {
-    response.writeHead(200, headers);
-    response.write(
-      JSON.stringify({
-        status: "success",
-        data: [],
-        note: "OPTIONS 請求成功",
-      }),
-    );
-    response.end();
   } else {
     response.writeHead(404, headers);
     response.write(
@@ -139,4 +125,4 @@ const requestListener = (request, response) => {
 };
 
 const server = http.createServer(requestListener);
-server.listen(process.env.PORT || s3005);
+server.listen(process.env.PORT || 3005);
