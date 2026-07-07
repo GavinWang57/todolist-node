@@ -1,0 +1,122 @@
+{
+  "info": {
+    "_postman_id": "687b0762-5212-4918-aa1e-80502afaf876",
+    "name": "todolist-rander",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "55597892",
+    "_collection_link": "https://go.postman.co/collection/55597892-687b0762-5212-4918-aa1e-80502afaf876?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "取得所有資料",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://todolist-node-s0h4.onrender.com/todos",
+          "protocol": "https",
+          "host": [
+            "todolist-node-s0h4",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "todos"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "新增一筆資料",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "https://todolist-node-s0h4.onrender.com/todos",
+          "protocol": "https",
+          "host": [
+            "todolist-node-s0h4",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "todos"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "刪除所有資料",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "https://todolist-node-s0h4.onrender.com/todos",
+          "protocol": "https",
+          "host": [
+            "todolist-node-s0h4",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "todos"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "刪除單筆資料",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "https://todolist-node-s0h4.onrender.com/todos/36280313-8a9d-48ee-afea-6b306e700f9a",
+          "protocol": "https",
+          "host": [
+            "todolist-node-s0h4",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "todos",
+            "36280313-8a9d-48ee-afea-6b306e700f9a"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "修改單筆資料",
+      "request": {
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{ \"title\": \"修改待辦項\" }",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://todolist-node-s0h4.onrender.com/todos/cb5ee374-203a-4378-9a7e-617637822c3e",
+          "protocol": "https",
+          "host": [
+            "todolist-node-s0h4",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "todos",
+            "cb5ee374-203a-4378-9a7e-617637822c3e"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

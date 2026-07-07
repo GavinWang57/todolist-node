@@ -1,0 +1,142 @@
+{
+  "info": {
+    "_postman_id": "707b3830-fcc7-4a94-a194-d2e9122965fe",
+    "name": "todolist-localhost",
+    "description": "### Welcome to Postman! This is your first collection. \n\nCollections are your starting point for building and testing APIs. You can use this one to:\n\n• Group related requests\n• Test your API in real-world scenarios\n• Document and share your requests\n\nUpdate the name and overview whenever you’re ready to make it yours.\n\n[Learn more about Postman Collections.](https://learning.postman.com/docs/collections/collections-overview/)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "55597892",
+    "_collection_link": "https://go.postman.co/collection/55597892-707b3830-fcc7-4a94-a194-d2e9122965fe?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "取得所有待辦",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3005/todos",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3005",
+          "path": [
+            "todos"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "新增單筆待辦",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{ \"title\": \"待辦項2\" }",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3005/todos",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3005",
+          "path": [
+            "todos"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "刪除所有待辦",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{ \"title\": \"待辦項7\" }"
+        },
+        "url": {
+          "raw": "http://localhost:3005/todos",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3005",
+          "path": [
+            "todos"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "刪除單筆資料",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{ \"title\": \"待辦項7\" }"
+        },
+        "url": {
+          "raw": "http://localhost:3005/todos/b6b70660-3e2a-4974-9d23-38197abee51d",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3005",
+          "path": [
+            "todos",
+            "b6b70660-3e2a-4974-9d23-38197abee51d"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "修改單筆內容",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{ \"title\": \"修改內容1\" }"
+        },
+        "url": {
+          "raw": "http://localhost:3005/todos/fee8acf0",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3005",
+          "path": [
+            "todos",
+            "fee8acf0"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
